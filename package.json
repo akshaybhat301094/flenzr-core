@@ -2,7 +2,6 @@
   "name": "flenzr-core",
   "version": "1.0.12",
   "description": "",
-  "type": "module",
   "homepage": "https://akshaybhat301094.github.io/flenzr-core",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
