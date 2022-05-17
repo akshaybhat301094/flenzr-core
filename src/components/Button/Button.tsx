@@ -7,7 +7,7 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   shape?: 'rounded';
 }
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   variant,
   shape,
@@ -20,3 +20,5 @@ export const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
+
+export default Button;
