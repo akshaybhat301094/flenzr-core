@@ -1,24 +1,29 @@
 import React from 'react';
 import { Story } from '@storybook/react';
 import { ButtonProps } from './Button';
-import Button from './Button';
+import FlenzrButton from './Button';
 
 export default {
   title: 'Button',
-  component: Button,
+  component: FlenzrButton,
 };
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <FlenzrButton {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  children: 'Primary',
-  variant: 'primary',
+export const Text = Template.bind({});
+Text.args = {
+  children: 'Text',
+  variant: 'text',
 };
 
-export const Danger = Template.bind({});
-Danger.args = {
-  children: 'Danger',
-  variant: 'danger',
-  shape: 'rounded',
+export const Contained = Template.bind({});
+Contained.args = {
+  children: 'Contained',
+  variant: 'contained',
+};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+  children: 'Outlined',
+  variant: 'outlined',
 };

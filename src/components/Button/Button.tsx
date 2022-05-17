@@ -1,24 +1,14 @@
 import React from 'react';
 import './Button.css';
+import Button from '@mui/material/Button';
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant: 'primary' | 'danger';
-  shape?: 'rounded';
+  variant: 'text' | 'contained' | 'outlined';
 }
 
-const Button: React.FC<ButtonProps> = ({
-  children,
-  variant,
-  shape,
-  ...props
-}) => {
-  const classNames = `btn btn-${variant} btn-${shape}`;
-  return (
-    <button className={classNames} {...props}>
-      {children}
-    </button>
-  );
+const FlenzrButton: React.FC<ButtonProps> = ({ children, variant }) => {
+  return <Button variant={variant}>{children}</Button>;
 };
 
-export default Button;
+export default FlenzrButton;
