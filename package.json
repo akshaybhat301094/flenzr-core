@@ -2,11 +2,10 @@
   "name": "flenzr-core",
   "version": "1.0.11",
   "description": "",
-  "type": "module",
   "homepage": "https://akshaybhat301094.github.io/flenzr-core",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
+    "sb": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "rollup": "rollup -c",
     "predeploy": "npm run build-storybook",
@@ -47,5 +46,9 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22"
+  }
 }
