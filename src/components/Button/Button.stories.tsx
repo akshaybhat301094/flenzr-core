@@ -1,29 +1,17 @@
-import React from 'react';
-import { Story } from '@storybook/react';
-import { ButtonProps } from './Button';
-import FlenzrButton from './Button';
+import React from "react";
+import { Story } from "@storybook/react";
+import { ButtonProps } from "@mui/material/Button";
+import Button from "./Button";
 
 export default {
-  title: 'Button',
-  component: FlenzrButton,
+  title: "Button",
+  component: Button,
 };
 
-const Template: Story<ButtonProps> = (args) => <FlenzrButton {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Text = Template.bind({});
-Text.args = {
-  children: 'Text',
-  variant: 'text',
-};
-
-export const Contained = Template.bind({});
-Contained.args = {
-  children: 'Contained',
-  variant: 'contained',
-};
-
-export const Outlined = Template.bind({});
-Outlined.args = {
-  children: 'Outlined',
-  variant: 'outlined',
+export const button = Template.bind({});
+button.args = {
+  children: "Text",
+  variant: "text",
 };

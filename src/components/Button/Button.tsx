@@ -1,14 +1,10 @@
-import React from 'react';
-import './Button.css';
-import Button from '@mui/material/Button';
+import React from "react";
+import "./Button.css";
+import MUIButton from "@mui/material/Button";
+import { ButtonProps } from "@mui/material/Button";
 
-export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  variant: 'text' | 'contained' | 'outlined';
-}
-
-const FlenzrButton: React.FC<ButtonProps> = ({ children, variant }) => {
-  return <Button variant={variant}>{children}</Button>;
+const Button: React.FC<ButtonProps> = (props) => {
+  return <MUIButton {...props}>{props.children}</MUIButton>;
 };
 
-export default FlenzrButton;
+export default Button;
