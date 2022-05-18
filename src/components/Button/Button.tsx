@@ -1,5 +1,4 @@
 import React from "react";
-import "./Button.css";
 import MUIButton from "@mui/material/Button";
 import { ButtonProps } from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
