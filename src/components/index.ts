@@ -6,3 +6,6 @@ export { default as Rating } from './Rating';
 export { default as TextField } from './TextField';
 export { default as Switch } from './Switch';
 export { default as Select } from './Select';
+export { default as Alert } from './Alert';
+export { default as Backdrop } from './Backdrop';
+export { default as Dialog } from './Dialog';
