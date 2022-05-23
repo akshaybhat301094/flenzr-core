@@ -10,3 +10,5 @@ export { default as Alert } from './Alert';
 export { default as Backdrop } from './Backdrop';
 export { default as Dialog } from './Dialog';
 export { default as Skeleton } from './Skeleton';
+export { default as Menu } from './Menu';
+export { default as Tabs } from './Tabs';
